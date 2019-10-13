@@ -1,16 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
+   <!--  <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+      <router-link to="/kako-sudjelovati">Kako sudjelovati</router-link>
+    </div> -->
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+
+$sivatx: #333333;
+$zuta: #F9D616;
+$plava: #0051BA;
+$zelena: #37B99B;
+$svijetlo_zuta: #FFF9C5;
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+      font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

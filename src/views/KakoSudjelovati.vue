@@ -1,7 +1,7 @@
 <template>
-    <div id="home">
+    <div id="kakosudjelovati">
         <Header />
-        <HomeContent/>
+        <KakoSudjelovatiContent/>
         <Footer />
     </div>
 </template>
@@ -9,14 +9,14 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-import HomeContent from '@/components/HomeContent.vue'
+import KakoSudjelovatiContent from '@/components/KakoSudjelovatiContent.vue'
 
 export default {
     name: 'home',
     components: {
         Header,
         Footer,
-        HomeContent
+        KakoSudjelovatiContent
     }
 }
 </script>
@@ -29,25 +29,20 @@ $zelena: #37B99B;
 $svijetlo_zuta: #FFF9C5;
 // HOME
 
-#home {
-    background: url('../assets/bg.jpg');
-    background-size: cover;
-    // background-position: top;
-    height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-
-    h2 {
-        color: $sivatx;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    p {
-        color: $sivatx;
-    }
-
+#kakosudjelovati{
+    // height: 100vh;
+    background: $zelena;
+   
+    background-image: url( '../assets/bg_kakosudjelovati.svg');
+  background-position: center -600px;
+  background-repeat: no-repeat;
+  background-size:  cover;
+ 
+ 
+  .veliki_brojevi{
+    font-size: 13rem;
+    color: $svijetlo_zuta;
+  }
 }
 
 </style>

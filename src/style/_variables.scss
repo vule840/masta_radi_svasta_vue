@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+
+$sivatx: #333333;
+$zuta: #F9D616;
+$plava: #0051BA;
+$zelena: #37B99B;
+$svijetlo_zuta: #FFF9C5;
+
+@media screen and (min-width: 1024px){
+	.navbar-burger {
+     display: block; 
+}
+}
+.navbar{
+	background: none;
+}
+
+ h2{
+		color: $svijetlo_zuta;
+		font-size: 2rem;
+		font-weight: bold;
+  }
+  body{
+  	font-size: 1.2rem;
+  	  font-family: 'Noto Sans', sans-serif;
+  }
+  
+// HOME
+
+#home{
+	background: url('/img/bg.jpg');
+    background-size: cover;
+    // background-position: top;
+    height: 100vh;
+  
+    background-attachment: fixed;
+    background-position: center;	
+	h2{
+		color: $sivatx;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+	p{
+		color: $sivatx;
+	}
+	
+}
+// Gumbi
+.zuti_gumb{
+		background: $zuta;
+		color: $sivatx;
+		width: 230px;
+	}
+	.plavi_gumb{
+		background: $plava;
+		color: white;
+		width: 230px;
+	}
+
+// FOOTER
+.footer-container{
+	// position: fixed;
+ //    bottom: 0px;
+ color:black;
+ padding-top: 3rem;
+    width: 100%;
+	
+	ul{
+		a{
+			text-decoration:underline;
+			&:hover{
+				font-weight: bold;
+			}
+			&:active{
+				font-weight: bold;
+			}
+		}
+	}
+	.cookies{
+		background: white;
+		a{
+			text-decoration:underline;
+		}
+	}
+	.ikea-logo{
+		position: relative;
+    	    top: -84px;
+	}
+	// .doodle{
+	// 	position: relative;
+ //    	top: -113px;
+	// }
+	
+
+	
+}
+// KAKO SUDJELOVATI
+
+
+#kakosudjelovati{
+	height: 100vh;
+	background: $zelena;
+	background-image: url(/img/bg_kakosudjelovati.svg);
+  background-position: center -600px;
+  background-repeat: no-repeat;
+  background-size:  cover;
+ 
+  .kakosudjelovati_content{
+  	padding-top: 23rem;
+	color: $svijetlo_zuta;
+
+  }
+  .veliki_brojevi{
+  	font-size: 13rem;
+  	color: $svijetlo_zuta;
+  }
+}
+.nav_kakosudjelovati{
+	background: RGBA(249,214,22,0.8);
+}
+
+// GOOD CAUSE
+
+#good_cause{
+	background: $zelena;
+	color: $svijetlo_zuta;
+}
