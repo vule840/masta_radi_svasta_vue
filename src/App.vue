@@ -12,11 +12,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 
-$sivatx: #333333;
-$zuta: #F9D616;
-$plava: #0051BA;
-$zelena: #37B99B;
-$svijetlo_zuta: #FFF9C5;
 
 #app {
   font-size: 1.2rem;
@@ -24,16 +19,16 @@ $svijetlo_zuta: #FFF9C5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  // color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+// #nav {
+//   padding: 30px;
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
 </style>

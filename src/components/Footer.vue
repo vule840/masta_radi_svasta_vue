@@ -2,7 +2,7 @@
 
   <div class="footer-container">
         <footer class="wrapper flex justify-between container mx-auto pb-8">
-            <ul>
+            <ul class="text-left">
                 <li><a href="#">Naslovnica</a></li>
                 <li><a href="/kako-sudjelovati.html">Kako sudjelovati</a></li>
                 <li><a href="#">Glasaj za svog favorita</a></li>
@@ -77,7 +77,7 @@ export default {
     }
     .ikea-logo{
         position: relative;
-            top: -84px;
+            top: -44px;
     }
     // .doodle{
     //  position: relative;

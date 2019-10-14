@@ -20,6 +20,30 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/KakoSudjelovati.vue')
+    },
+    {
+      path: '/good-cause',
+      name: 'good-cause',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/GoodCause.vue')
+    },
+    {
+      path: '/glasuj-za-svog-favorita',
+      name: 'glasuj-za-svog-favorita',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/GlasujZaSvogFavorita.vue')
+    },
+    {
+      path: '/raspored-crtanja',
+      name: 'raspored-crtanja',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/RasporedCrtanja.vue')
     }
   ]
 })

@@ -6,6 +6,7 @@ $zuta: #F9D616;
 $plava: #0051BA;
 $zelena: #37B99B;
 $svijetlo_zuta: #FFF9C5;
+$ljubicasta: #82559E;
 
 @media screen and (min-width: 1024px){
 	.navbar-burger {
@@ -16,11 +17,12 @@ $svijetlo_zuta: #FFF9C5;
 	background: none;
 }
 
- h2{
+ .naslov{
 		color: $svijetlo_zuta;
 		font-size: 2rem;
 		font-weight: bold;
   }
+
   body{
   	font-size: 1.2rem;
   	  font-family: 'Noto Sans', sans-serif;
@@ -29,7 +31,7 @@ $svijetlo_zuta: #FFF9C5;
 // HOME
 
 #home{
-	background: url('/img/bg.jpg');
+	background: url('~@/assets/bg.jpg');
     background-size: cover;
     // background-position: top;
     height: 100vh;
@@ -46,16 +48,22 @@ $svijetlo_zuta: #FFF9C5;
 	}
 	
 }
+
+
+
+
+
 // Gumbi
 .zuti_gumb{
 		background: $zuta;
 		color: $sivatx;
-		width: 230px;
+		width: 330px;
+		font-weight: bold;
 	}
 	.plavi_gumb{
 		background: $plava;
 		color: white;
-		width: 230px;
+		width: 330px;
 	}
 
 // FOOTER
@@ -67,6 +75,7 @@ $svijetlo_zuta: #FFF9C5;
     width: 100%;
 	
 	ul{
+		text-align: left;
 		a{
 			text-decoration:underline;
 			&:hover{
@@ -85,7 +94,7 @@ $svijetlo_zuta: #FFF9C5;
 	}
 	.ikea-logo{
 		position: relative;
-    	    top: -84px;
+    	    top: -44px;
 	}
 	// .doodle{
 	// 	position: relative;
@@ -99,9 +108,9 @@ $svijetlo_zuta: #FFF9C5;
 
 
 #kakosudjelovati{
-	height: 100vh;
+	// height: 100vh;
 	background: $zelena;
-	background-image: url(/img/bg_kakosudjelovati.svg);
+	background-image: url('~@/assets/bg_kakosudjelovati.svg');
   background-position: center -600px;
   background-repeat: no-repeat;
   background-size:  cover;
@@ -115,14 +124,81 @@ $svijetlo_zuta: #FFF9C5;
   	font-size: 13rem;
   	color: $svijetlo_zuta;
   }
-}
-.nav_kakosudjelovati{
+  .nav_kakosudjelovati{
 	background: RGBA(249,214,22,0.8);
 }
+}
+
 
 // GOOD CAUSE
 
-#good_cause{
+
+#kakosudjelovati header {
+    background: rgba(249, 214, 22, 0.8);
+}
+#goodcause{
+	// height: 100vh;
 	background: $zelena;
 	color: $svijetlo_zuta;
+ 	.container2{
+		width:1400px;
+ 	}
+}
+// glasuj za favorita
+#glasujzafavorita{
+	background: $svijetlo_zuta;
+	.imeslike{
+		font-weight: bold;
+		font-size: 1rem;
+	}
+	.glasovi{
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.autor{
+		font-size: 0.7rem;
+		font-weight: bold;
+	}
+}
+
+// RASPORED CRTANJA
+#rasporedcrtanja{
+	background: $ljubicasta;
+}
+
+/*----------  TRANZICIJE - fade  ----------*/
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.6s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+// Wrapper Mobile
+.linkHolderMobile{
+  position: absolute;
+  right:  0; 
+   background: #00386c;
+  width: 250px;
+  height: 310px;
+  top: 50px;
+  z-index: 11;
+  margin-left: auto;
+  .links{
+    padding-left: 0;
+    margin-top: 1rem;
+    li{
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      .prijava{
+        display: block;
+        background: white;
+      }
+    }
+    a{
+      color:#fff;
+      text-decoration:none;
+    }
+    list-style:none;
+  
+  }
 }
