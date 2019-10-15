@@ -166,6 +166,16 @@ $ljubicasta: #82559E;
 	background: $ljubicasta;
 }
 
+// NAGRADE
+#nagrade{
+	// background: $zelena;
+	background-image: url('~@/assets/nagrade_bg.jpg');
+  // background-position: center -600px;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  height: 100vh;
+}
+
 /*----------  TRANZICIJE - fade  ----------*/
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.6s;
